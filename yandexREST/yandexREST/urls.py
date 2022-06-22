@@ -16,6 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from marketAPI.views import *
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('imports', MarketAPICreate.as_view()),
+    path('delete/<uuid:pk>', MarketAPIDelete.as_view()),
+    path('nodes/<uuid:pk>', MarketAPIGetById.as_view()),
+    path('sales', MarketAPIGetByDate.as_view())
 ]
