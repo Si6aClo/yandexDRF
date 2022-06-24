@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-=ho8zd9^zll-!s&u)*ec-4y*@r#p0xod5ehmi8dn&0cetx_nv8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'yandexREST.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'resources/db.sqlite3',
     }
 }
 
